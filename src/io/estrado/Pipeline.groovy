@@ -26,7 +26,7 @@ def helmConfig() {
 
 def helmDeploy(Map args) {
     //configure helm client and confirm tiller process is installed
-    helmConfig()
+    //helmConfig()
     def String release_overrides = ""
     if (args.set) {
       release_overrides = getHelmReleaseOverrides(args.set)
